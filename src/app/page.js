@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
 // Dynamic import to prevent SSR issues
@@ -12,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto py-8">
-        <PDFViewer />
+        <PDFViewer fileURL="/JasonYustResumeFall2025.pdf" />
       </div>
     </div>
   );

@@ -1,0 +1,44 @@
+export default function Certifications() {
+    // Example: Set dynamic height/width based on screen size or props
+    // Here, we'll use a variable for size. You can adjust logic as needed.
+    const imageSize = 250; // Change this value or make it dynamic as needed
+
+    return (
+        <div className="min-h-screen bg-background text-foreground">
+            <div className="container mx-auto py-8">
+
+                <h1 className="text-3xl font-bold mb-8">Certifications</h1>
+
+                <hr className="border-gray-200 dark:border-gray-700 container mx-auto my-8" />
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                    <div className="flex flex-col items-center">
+                        <img
+                            src="/AWSCloudPractitioner.png"
+                            alt="AWS Certified Cloud Practitioner"
+                            height={imageSize}
+                            width={imageSize}
+                        />
+                        <p className="mt-2 text-center">AWS Certified Cloud Practitioner</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <img
+                            src="/JavaScriptEntryLevelProgrammer.png"
+                            alt="JavaScript Entry-Level Programmer"
+                            height={imageSize}
+                            width={imageSize}
+                        />
+                        <p className="mt-2 text-center">JavaScript Entry-Level Programmer</p>
+                    </div>
+                </div>
+
+                <hr className="border-gray-200 dark:border-gray-700 container mx-auto my-8" />
+
+                <a href="https://www.credly.com/users/jason-yust/" className="text-blue-500 hover:underline">
+                    View all certifications
+                </a>
+
+            </div>
+        </div>
+    );
+}

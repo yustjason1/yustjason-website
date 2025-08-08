@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-export default function PDFViewer() {
+export default function PDFViewer({ fileURL }) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [workerReady, setWorkerReady] = useState(false);
@@ -14,11 +14,10 @@ export default function PDFViewer() {
     setWorkerReady(true);
     
     // Test if the file is accessible
-    const testUrl = "/JasonYustResumeFall2025.pdf";
-    fetch(testUrl)
+    fetch(fileURL)
       .then(response => {
         if (response.ok) {
-          setFileUrl(testUrl);
+          setFileUrl(fileURL);
         } else {
           console.error('PDF file not accessible, status:', response.status);
         }

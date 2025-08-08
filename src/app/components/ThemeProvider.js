@@ -5,10 +5,12 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext({
   theme: "light",
   toggleTheme: () => {},
+  mounted: false
 });
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("light");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     // Check for saved theme preference or default to 'light'
@@ -20,20 +22,26 @@ export function ThemeProvider({ children }) {
     } else if (prefersDark) {
       setTheme("dark");
     }
+
+    setMounted(true);
   }, []);
 
   useEffect(() => {
     // Update the document's data-theme attribute
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-  }, [theme]);
+  }, [theme, mounted]);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  if (!mounted) {
+    return <>{children}</>;
+  }
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, mounted }}>
       {children}
     </ThemeContext.Provider>
   );
