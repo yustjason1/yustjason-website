@@ -31,10 +31,8 @@ export default function About() {
         <hr className="border-gray-200 dark:border-gray-700 container mx-auto" />
 
         <div className="container mx-auto py-8">
-            <h2 className="text-3xl font-bold mb-4">About This Website</h2>
-            <p className="mb-4">This website is built using several industry-standard technologies, including Next.js, React, and Tailwind CSS.</p>
-            <p className="mb-4">This website is hosted on Amazon Web Services EC2.</p>
-            <p className="mb-4">The source code for this website is available on <a href="https://github.com/yustjason1/yustjason-website" className="text-blue-500 hover:underline">GitHub</a>.</p>
+            <h2 className="text-2xl font-bold mb-4">About This Website</h2>
+            <p className="mb-4">This website is a portfolio showcasing my work and projects. Built with Next.js, React, and Tailwind CSS, featuring a responsive design with dark/light theme support.</p>
         </div>
     </div>
     );
