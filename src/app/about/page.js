@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import HorizontalLine from '../components/HorizontalLine';
 
 export default function About() {
     return (
@@ -28,7 +29,7 @@ export default function About() {
             </div>
         </div>
 
-        <hr className="border-gray-200 dark:border-gray-700 container mx-auto" />
+        <HorizontalLine />
 
         <div className="container mx-auto py-8">
             <h2 className="text-2xl font-bold mb-4">About This Website</h2>

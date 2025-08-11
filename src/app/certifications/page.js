@@ -1,3 +1,5 @@
+import HorizontalLine from "../components/HorizontalLine";
+
 export default function Certifications() {
     // Example: Set dynamic height/width based on screen size or props
     // Here, we'll use a variable for size. You can adjust logic as needed.
@@ -9,7 +11,7 @@ export default function Certifications() {
 
                 <h1 className="text-3xl font-bold mb-8">Certifications</h1>
 
-                <hr className="border-gray-200 dark:border-gray-700 container mx-auto my-8" />
+                <HorizontalLine />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     <div className="flex flex-col items-center">
@@ -32,7 +34,7 @@ export default function Certifications() {
                     </div>
                 </div>
 
-                <hr className="border-gray-200 dark:border-gray-700 container mx-auto my-8" />
+                <HorizontalLine />
 
                 <a href="https://www.credly.com/users/jason-yust/" className="text-blue-500 hover:underline">
                     View all certifications
