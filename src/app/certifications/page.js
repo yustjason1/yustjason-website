@@ -32,6 +32,15 @@ export default function Certifications() {
                         />
                         <p className="mt-2 text-center">JavaScript Entry-Level Programmer</p>
                     </div>
+                    <div className="flex flex-col items-center">
+                        <img
+                            src="/Certifications/AWSAIPractitioner.png"
+                            alt="AWS Certified AI Practitioner"
+                            height={imageSize}
+                            width={imageSize}
+                        />
+                        <p className="mt-2 text-center">AWS Certified AI Practitioner (IN PROGRESS)</p>
+                    </div>
                 </div>
 
                 <HorizontalLine />

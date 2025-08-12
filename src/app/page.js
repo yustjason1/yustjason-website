@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import HorizontalLine from './components/HorizontalLine';
 
 export default function Home() {
     return (
@@ -30,7 +31,14 @@ export default function Home() {
             </div>
         </div>
 
-        <hr className="border-gray-200 dark:border-gray-700 container mx-auto" />
+        <HorizontalLine />
+
+        <div className='container mx-auto py-8'>
+            <h2 className="text-3xl font-bold mb-4">Fun Facts</h2>
+            <p className='mb-4'>Outside of classes and internships, I’ve had some pretty cool experiences. I’m an Eagle Scout and was my high school valedictorian, both of which taught me the value of hard work and persistence. I have earned certifications in AWS Cloud Practitioner and JavaScript programming, and I’m always exploring new frameworks and tools—sometimes just because I’m curious about how they work. I also keep a portfolio of my projects online at yustjason.com, where I share recent projects, class assignments, and code experiments.</p>
+        </div>
+
+        <HorizontalLine />
 
         <div className="container mx-auto py-8">
             <h2 className="text-3xl font-bold mb-4">About This Website</h2>
