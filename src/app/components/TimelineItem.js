@@ -15,7 +15,6 @@ export default function TimelineItem({ title, date, items = [] }) {
                         <video
                             src={item.src}
                             controls
-                            autoPlay
                             loop
                             muted
                             playsInline
