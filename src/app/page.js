@@ -14,16 +14,18 @@ export default function Home() {
                     className="rounded-[25%] mb-4 object-contain"
                 />
                 <div>
-                    <p className="mb-4">Current student at the Georgia Institute of Technology in the College of Computing and Software Engineering. 
-                        4 years of leadership training through the Boy Scouts of America and current Eagle Scout. 
-                        Valedictorian of Covenant Christian Academy class of 2022. 
-                        I aspire to work in Software Engineering where I can grow as a person and improve my skills.
+                    <p className="mb-4">
+                        Hi, I’m Jason Yust — a senior at Georgia Tech majoring in Computer Science. I’ve always enjoyed figuring out how things work and finding better ways to make them work, which naturally led me to software development. I’m especially passionate about building applications that are both efficient and user-friendly, and I’m fascinated by the ways AI can be integrated into real-world systems to make them smarter and more adaptable.
                     </p>
-                    <p className="mb-4">Past job experiences include:</p>
-                    <ul className="list-disc pl-5">
-                        <li className="mb-4">Software Internship at AppVault, where I built stand-alone tools for internal use with the Electron platform, added production code involving integration with Twilio, created several automations with Microsoft Power Automate, and worked with AI using Microsoft AI Builder and Microsoft Copilot.</li>
-                        <li className="mb-4">Software Internship at CompuScholar, where I successfully led two projects from start to finish, including a full Reporting Engine that went into production for end users and a prototype AI integration which utilized OpenAI's Generative AI and a RAG system for dynamic prompt creation.</li>
-                    </ul>
+                    <p className='mb-4'>
+                        Over the past couple of years, I’ve had the opportunity to work in some exciting internship roles. In Summer 2025, I joined CompuScholar, where I built a Production Report Engine from the ground up and prototyped an AI-powered content system using AWS, PHP, Python, the OpenAI API, and vector databases. The summer before, I was at AppVault, where I worked on production code in .NET Core MVC, automated workflows with Power Automate, and developed internal tools using Electron and JavaScript.
+                    </p>
+                    <p className='mb-4'>
+                        Outside of my coursework and internships, I’m teaching myself Japanese and enjoy exploring Japanese literature and media. I’ve found that learning a new language challenges me to think differently and appreciate new perspectives — something I believe also makes me a better problem-solver.
+                    </p>
+                    <p className='mb-4'>
+                        Now, I’m looking ahead to Summer 2026 and hoping to join a forward-thinking company where I can take on meaningful projects, continue learning from talented teammates, and hopefully grow into a full-time software engineering role after graduation.
+                    </p>
                 </div>
             </div>
         </div>
