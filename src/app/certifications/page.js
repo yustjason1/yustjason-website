@@ -16,7 +16,7 @@ export default function Certifications() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     <div className="flex flex-col items-center">
                         <img
-                            src="/AWSCloudPractitioner.png"
+                            src="/Certifications/AWSCloudPractitioner.png"
                             alt="AWS Certified Cloud Practitioner"
                             height={imageSize}
                             width={imageSize}
@@ -25,7 +25,7 @@ export default function Certifications() {
                     </div>
                     <div className="flex flex-col items-center">
                         <img
-                            src="/JavaScriptEntryLevelProgrammer.png"
+                            src="/Certifications/JavaScriptEntryLevelProgrammer.png"
                             alt="JavaScript Entry-Level Programmer"
                             height={imageSize}
                             width={imageSize}

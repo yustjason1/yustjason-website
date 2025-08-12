@@ -7,7 +7,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             <div className="flex flex-row gap-8 items-start py-4">
                 <Image 
-                    src="/JasonYustProfilePicture.jpg" 
+                    src="/About/JasonYustProfilePicture.jpg" 
                     alt="Profile Picture" 
                     width={250} 
                     height={250} 

@@ -11,7 +11,7 @@ export default function Resume() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto py-8">
-        <PDFViewer fileURL="/JasonYustResumeFall2025.pdf" />
+        <PDFViewer fileURL="/Resume/JasonYustResumeFall2025.pdf" />
       </div>
     </div>
   );

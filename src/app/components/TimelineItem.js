@@ -9,12 +9,16 @@ export default function TimelineItem({ title, date, items = [] }) {
                     </p>
                 );
 
-            case 'gif':
+            case 'video':
                 return (
                     <div key={index} className="w-full mb-8 mt-8">
-                        <img 
+                        <video
                             src={item.src}
-                            alt={item.alt}
+                            controls
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
                             className={`w-full h-auto rounded-lg shadow-md ${item.className || ''}`}
                         />
                         {item.caption && (

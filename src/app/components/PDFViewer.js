@@ -10,7 +10,7 @@ export default function PDFViewer({ fileURL }) {
 
   useEffect(() => {
     // Use local worker file to avoid CDN issues
-    pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+    pdfjs.GlobalWorkerOptions.workerSrc = '/Resume/pdf.worker.min.js';
     setWorkerReady(true);
     
     // Test if the file is accessible

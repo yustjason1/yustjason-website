@@ -28,9 +28,9 @@ export default function Projects() {
               ]
             },
             {
-              type: 'gif',
-              src: '/CompuScholarAIClarify.gif',
-              alt: 'AI Help Integration GIF',
+              type: 'video',
+              src: '/Projects/CompuScholarAI/CompuScholarAIClarify.mp4',
+              alt: 'AI Help Integration Video',
               caption: 'AI Paragraph Clarification'
             },
             {
@@ -38,9 +38,9 @@ export default function Projects() {
               content: "Additional prototype work included utilizing AI to explain coding errors and providing suggestions for fixing them, as well as reading activity instructions and producing pseudo-code."
             },
             {
-              type: 'gif',
-              src: '/CompuScholarAICodeCheck.gif',
-              alt: 'AI Code Check GIF',
+              type: 'video',
+              src: '/Projects/CompuScholarAI/CompuScholarAICodeCheck.mp4',
+              alt: 'AI Code Check Video',
               caption: 'AI Code Check'
             }
           ]}
