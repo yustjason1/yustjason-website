@@ -1,3 +1,3 @@
 export default function HorizontalLine() {
-  return <hr className="border-gray-200 dark:border-gray-700 container mx-auto my-8" />;
+  return <hr className="container mx-auto my-8" style={{ borderColor: "var(--border)" }} />;
 }

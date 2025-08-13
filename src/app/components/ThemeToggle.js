@@ -1,14 +1,28 @@
 "use client";
 
-import { useTheme } from "./ThemeProvider";
+import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react'
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <button
-      onClick={toggleTheme}
-      className="relative inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      className="relative inline-flex h-8 w-8 items-center justify-center rounded-full border"
+      style={{
+        backgroundColor: "var(--background)"
+      }}
       aria-label="Toggle theme"
     >
       {theme === "light" ? (

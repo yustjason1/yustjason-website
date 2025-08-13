@@ -1,12 +1,11 @@
 import HorizontalLine from "../components/HorizontalLine";
 
 export default function Certifications() {
-    // Example: Set dynamic height/width based on screen size or props
-    // Here, we'll use a variable for size. You can adjust logic as needed.
-    const imageSize = 250; // Change this value or make it dynamic as needed
+    
+    const imageSize = 250;
 
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
             <div className="container mx-auto py-8">
 
                 <h1 className="text-3xl font-bold mb-8">Certifications</h1>

@@ -4,7 +4,7 @@ export default function TimelineItem({ title, date, items = [] }) {
         switch (item.type) {
             case 'text':
                 return (
-                    <p key={index} className="mb-4 text-foreground">
+                    <p key={index} className="mb-4" style={{ color: "var(--foreground)" }}>
                         {item.content}
                     </p>
                 );
@@ -21,7 +21,7 @@ export default function TimelineItem({ title, date, items = [] }) {
                             className={`w-full h-auto rounded-lg shadow-md ${item.className || ''}`}
                         />
                         {item.caption && (
-                            <p className="text-sm text-muted-foreground mt-2 text-center">
+                            <p className="text-sm mt-2 text-center" style={{ color: "var(--muted-foreground)" }}>
                                 {item.caption}
                             </p>
                         )}
@@ -32,7 +32,7 @@ export default function TimelineItem({ title, date, items = [] }) {
                 return (
                 <ul key={index} className="list-disc list-inside ml-4 mb-4 space-y-2">
                     {item.items.map((listItem, listIndex) => (
-                    <li key={listIndex} className="text-foreground">{listItem}</li>
+                    <li key={listIndex} style={{ color: "var(--foreground)" }}>{listItem}</li>
                     ))}
                 </ul>
                 );
@@ -43,13 +43,13 @@ export default function TimelineItem({ title, date, items = [] }) {
     };
 
     return (
-        <div className="mb-8">
+        <div className="mb-8" style={{ color: "var(--foreground)" }}>
             <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-            <h3 className="text-lg text-muted-foreground mb-2">{date}</h3>
+            <h3 className="text-lg mb-2">{date}</h3>
             <div className="flex gap-4">
 
                 {/* Vertical Line */}
-                <div className="w-0.5 bg-gray-300 dark:bg-gray-600 mt-2"></div>
+                <div className="w-0.5 mt-2" style={{ backgroundColor: "var(--border)" }}></div>
 
                 <div className="flex-1">
                     {items.map((item, index) => renderItem(item, index))}

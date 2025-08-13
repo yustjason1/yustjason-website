@@ -3,7 +3,7 @@ import HorizontalLine from './components/HorizontalLine';
 
 export default function Home() {
     return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
         <div className="container mx-auto py-8">
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             <div className="flex flex-row gap-8 items-start py-4">

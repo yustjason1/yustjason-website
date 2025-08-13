@@ -1,17 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import { ThemeProvider } from "./components/ThemeProvider";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ThemeProvider } from 'next-themes'
 
 export const metadata = {
   title: "yustjason-website",
@@ -29,10 +18,8 @@ export default function RootLayout({ children }) {
           content="Jason Yust's personal website showcasing projects and about me."
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider>
+      <body>
+        <ThemeProvider attribute="class">
           <Header />
           {children}
         </ThemeProvider>
