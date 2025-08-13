@@ -31,6 +31,15 @@
   --header: #18181b;
 }
 
+.contact-icon {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.dark .contact-icon {
+  filter: invert(1);
+}
+
 /* Add consistent transitions for theme changes */
 * {
   transition-property: background-color, border-color, color, fill, stroke;
