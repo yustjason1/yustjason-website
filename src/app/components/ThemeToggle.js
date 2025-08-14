@@ -19,7 +19,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="relative inline-flex h-8 w-8 items-center justify-center rounded-full border"
+      className="relative inline-flex h-8 w-8 items-center justify-center rounded-full border cursor-pointer"
       style={{
         backgroundColor: "var(--background)"
       }}

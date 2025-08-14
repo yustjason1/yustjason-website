@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           content="Jason Yust's personal website showcasing projects and about me."
         />
       </head>
-      <body>
+      <body className="overflow-x-hidden">
         <ThemeProvider attribute="class">
           <Header />
           {children}

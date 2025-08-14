@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className="min-h-screen" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
+        <div className="min-h-screen px-8" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
             <div className="container mx-auto py-8">
                 <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
                 <p className="mb-4">Feel free to reach out to me via any of these channels: </p>

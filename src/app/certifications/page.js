@@ -5,7 +5,7 @@ export default function Certifications() {
     const imageSize = 250;
 
     return (
-        <div className="min-h-screen" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
+        <div className="min-h-screen px-8" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
             <div className="container mx-auto py-8">
 
                 <h1 className="text-3xl font-bold mb-8">Certifications</h1>

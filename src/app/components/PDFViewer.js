@@ -72,7 +72,7 @@ export default function PDFViewer({ fileURL }) {
   }
 
   return (
-    <div className="text-center">
+    <div className="w-full max-w-full">
       <div className="mb-4 flex justify-end">
         <button
           onClick={handleDownload}
@@ -88,22 +88,27 @@ export default function PDFViewer({ fileURL }) {
         </button>
       </div>
       
-      <Document
-        file={fileUrl}
-        onLoadSuccess={onDocumentLoadSuccess}
-        onLoadError={onDocumentLoadError}
-        loading={<div className="flex justify-center items-center h-64">Loading PDF...</div>}
-        error={<div className="text-red-500">Error loading PDF. Check the console for details.</div>}
-        className="flex justify-center"
-      >
-        <Page 
-          pageNumber={pageNumber} 
-          renderTextLayer={false}
-          renderAnnotationLayer={false}
-          className="shadow-lg"
-          width={800}
-        />
-      </Document>
+      {/* Scrollable PDF Container */}
+      <div className="w-full overflow-x-auto overflow-y-hidden">
+        <div className="flex justify-center min-w-fit">
+          <Document
+            file={fileUrl}
+            onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={onDocumentLoadError}
+            loading={<div className="flex justify-center items-center h-64">Loading PDF...</div>}
+            error={<div className="text-red-500">Error loading PDF. Check the console for details.</div>}
+            className="flex justify-center"
+          >
+            <Page 
+              pageNumber={pageNumber} 
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+              className="shadow-lg"
+              width={800}
+            />
+          </Document>
+        </div>
+      </div>
       
       {numPages > 1 && (
         <div className="mt-4 flex justify-center items-center space-x-4">
