@@ -3,8 +3,17 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import Hamburger from "./Hamburger";
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Header() {
+
+    const pathname = usePathname();
+
+    // Scroll to top when pathname changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
         <header className="drop-shadow-lg sticky top-0 z-9999" style={{ backgroundColor: "var(--header)", color: "var(--foreground)" }}>

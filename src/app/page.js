@@ -10,9 +10,9 @@ export default function Home() {
                 <Image 
                     src="/About/JasonYustProfilePicture.jpg" 
                     alt="Profile Picture" 
-                    width={250} 
-                    height={250} 
-                    className="rounded-[25%] mb-4 object-contain"
+                    width={300} 
+                    height={300} 
+                    className="rounded-[15%] mb-4 object-contain"
                 />
                 <div>
                     <p className="mb-4">
@@ -27,24 +27,31 @@ export default function Home() {
                     <p className='mb-4'>
                         Now, I’m looking ahead to Summer 2026 and hoping to join a forward-thinking company where I can take on meaningful projects, continue learning from talented teammates, and hopefully grow into a full-time software engineering role after graduation.
                     </p>
+                    <p className='mb-4'>
+                        Outside of classes and internships, I’ve had some pretty cool experiences. I’m an Eagle Scout and was my high school valedictorian, both of which taught me the value of hard work and persistence. I have earned certifications in AWS Cloud Practitioner and JavaScript programming, and I’m always exploring new frameworks and tools.
+                    </p>
                 </div>
             </div>
         </div>
 
         <HorizontalLine />
 
-        <div className='container mx-auto py-8'>
-            <h2 className="text-3xl font-bold mb-4">Fun Facts</h2>
-            <p className='mb-4'>Outside of classes and internships, I’ve had some pretty cool experiences. I’m an Eagle Scout and was my high school valedictorian, both of which taught me the value of hard work and persistence. I have earned certifications in AWS Cloud Practitioner and JavaScript programming, and I’m always exploring new frameworks and tools—sometimes just because I’m curious about how they work. I also keep a portfolio of my projects online at yustjason.com, where I share recent projects, class assignments, and code experiments.</p>
-        </div>
-
-        <HorizontalLine />
-
         <div className="container mx-auto py-8">
             <h2 className="text-3xl font-bold mb-4">About This Website</h2>
-            <p className="mb-4">This website is built using several industry-standard technologies, including Next.js, React, and Tailwind CSS.</p>
-            <p className="mb-4">This website is hosted on Amazon Web Services EC2.</p>
-            <p className="mb-4">The source code for this website is available on <a href="https://github.com/yustjason1/yustjason-website" className="text-blue-500 hover:underline">GitHub</a>.</p>
+            <p className="mb-4">
+                This website is built using several industry-standard technologies:
+            </p>
+            <ul className='list-disc list-inside mb-4'>
+                <li>Next.js</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Amazon Web Services EC2</li>
+            </ul>
+            <p className="mb-4">
+                The source code for this website is available on
+                    <a href="https://github.com/yustjason1/yustjason-website" className="text-blue-500 hover:underline"> GitHub</a>
+                .
+            </p>
         </div>
     </div>
     );
