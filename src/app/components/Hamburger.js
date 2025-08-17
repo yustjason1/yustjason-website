@@ -35,7 +35,7 @@ export default function Hamburger() {
             )}
 
             {/* Mobile Menu */}
-            <nav className={`fixed top-0 right-0 h-full w-64 z-40 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <nav className={`fixed top-0 right-0 h-full w-64 z-40 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? '' : 'hidden'}`}>
                 <div className="flex flex-col p-6 pt-16 drop-shadow-lg rounded-[5%]" style={{ backgroundColor: "var(--header)" }}>
                     {/* Theme Toggle in Mobile Menu */}
                     <div className="mb-8 flex justify-center">
