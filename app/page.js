@@ -8,7 +8,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             <div className="flex flex-col gap-8 items-start py-4 md:flex-row">
                 <Image 
-                    src="/About/JasonYustProfilePicture.jpg" 
+                    src="/JasonYustSpring2026HeadshotNoGlasses.jpg" 
                     alt="Profile Picture" 
                     width={300} 
                     height={300} 
