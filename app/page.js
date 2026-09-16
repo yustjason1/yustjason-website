@@ -16,19 +16,16 @@ export default function Home() {
                 />
                 <div>
                     <p className="mb-4">
-                        Hi, I’m Jason Yust — a senior at Georgia Tech majoring in Computer Science. I’ve always enjoyed figuring out how things work and finding better ways to make them work, which naturally led me to software development. I’m especially passionate about building applications that are both efficient and user-friendly, and I’m fascinated by the ways AI can be integrated into real-world systems to make them smarter and more adaptable.
+                        Hi, I’m Jason Yust — a senior at Georgia Tech majoring in Computer Science, graduating in December 2026. I’ve always enjoyed figuring out how things work and finding better ways to make them work, which naturally led me to software development. I’m especially passionate about building applications that are both efficient and user-friendly, and I’m fascinated by the ways AI can be integrated into real-world systems to make them smarter and more adaptable.
                     </p>
                     <p className='mb-4'>
-                        Over the past couple of years, I’ve had the opportunity to work in some exciting internship roles. In Summer 2025, I joined CompuScholar, where I built a Production Report Engine from the ground up and prototyped an AI-powered content system using AWS, PHP, Python, the OpenAI API, and vector databases. The summer before, I was at AppVault, where I worked on production code in .NET Core MVC, automated workflows with Power Automate, and developed internal tools using Electron and JavaScript.
+                        Over the past few years, I’ve had the opportunity to work in some exciting roles. Most recently, during Summer 2026, I was a Software Engineer Intern at Tyler Technologies. There, I worked across multiple teams using Angular and TypeScript to resolve ADA compliance issues and ship new features, all while embracing an AI-forward culture by leveraging coding assistants like Claude and Codex to accelerate my workflow. Prior to that, I built a Production Report Engine and an AI-powered RAG system at CompuScholar, developed .NET Core MVC production code at AppVault, and built an AI startup MVP called NorthStar.
                     </p>
                     <p className='mb-4'>
-                        Outside of my coursework and internships, I’m teaching myself Japanese and enjoy exploring Japanese literature and media. I’ve found that learning a new language challenges me to think differently and appreciate new perspectives — something I believe also makes me a better problem-solver.
+                        Outside of my coursework and internships, I'm always tinkering with new tech — whether that's experimenting with game development in Unity and Unreal Engine 5, optimizing my local UniFi network, or exploring interesting use cases for AI. I’m also teaching myself Japanese and enjoy exploring Japanese literature and media, which challenges me to think differently and appreciate new perspectives.
                     </p>
                     <p className='mb-4'>
-                        Now, I’m looking ahead to Summer 2026 and hoping to join a forward-thinking company where I can take on meaningful projects, continue learning from talented teammates, and hopefully grow into a full-time software engineering role after graduation.
-                    </p>
-                    <p className='mb-4'>
-                        Outside of classes and internships, I’ve had some pretty cool experiences. I’m an Eagle Scout and was my high school valedictorian, both of which taught me the value of hard work and persistence. I have earned certifications in AWS Cloud Practitioner and JavaScript programming, and I’m always exploring new frameworks and tools.
+                        As an Eagle Scout, I’ve learned the value of hard work and persistence. Now, as I wrap up my final semester, I’m looking to join a forward-thinking company where I can take on meaningful projects, continue learning from talented teammates, and step into a full-time software engineering role.
                     </p>
                 </div>
             </div>

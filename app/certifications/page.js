@@ -12,7 +12,7 @@ export default function Certifications() {
 
                 <HorizontalLine />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div className="mx-auto grid max-w-3xl grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
                     <div className="flex flex-col items-center">
                         <img
                             src="/Certifications/AWSCloudPractitioner.png"
@@ -30,15 +30,6 @@ export default function Certifications() {
                             width={imageSize}
                         />
                         <p className="mt-2 text-center">JavaScript Entry-Level Programmer</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img
-                            src="/Certifications/AWSAIPractitioner.png"
-                            alt="AWS Certified AI Practitioner"
-                            height={imageSize}
-                            width={imageSize}
-                        />
-                        <p className="mt-2 text-center">AWS Certified AI Practitioner (IN PROGRESS)</p>
                     </div>
                 </div>
 
